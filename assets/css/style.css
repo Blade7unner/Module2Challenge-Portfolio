@@ -21,3 +21,7 @@ header img {
     margin: 20px 0;
 }
 
+nav ul {
+    list-style: none;
+}
+
