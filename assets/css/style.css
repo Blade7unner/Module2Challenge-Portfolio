@@ -73,4 +73,20 @@ header img {
     justify-content: space-around;
 }
 
+.work-sample {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+
+}
+
+.work-sample img {
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+
+
 
