@@ -11,6 +11,14 @@ header h1 {
     font-size: 2rem;
 }
 
+header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 20px 0;
+}
+
+
 
 /* Comments to add */
 body, h1, h2, p {
