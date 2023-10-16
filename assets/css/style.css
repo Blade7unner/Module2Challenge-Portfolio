@@ -56,3 +56,9 @@ section {
 nav a:hover {
     color: #ff5733; /* Change this color as desired */
 }
+
+/* Style the work section */
+#work {
+    text-align: center;
+}
+
