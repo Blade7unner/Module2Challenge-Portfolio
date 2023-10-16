@@ -36,3 +36,10 @@ nav a {
     font-weight: bold;
 }
 
+section {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
