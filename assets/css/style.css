@@ -14,3 +14,10 @@ header h1 {
     font-size: 2rem;
 }
 
+header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 20px 0;
+}
+
