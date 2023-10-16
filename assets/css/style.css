@@ -69,3 +69,7 @@ nav a:hover {
     margin: 10px;
     cursor: pointer;
 }
+
+#work img:hover {
+    transform: scale(1.1);
+}
