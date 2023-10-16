@@ -51,3 +51,8 @@ section {
     margin: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
+
+/* Style links in the navigation */
+nav a:hover {
+    color: #ff5733; /* Change this color as desired */
+}
