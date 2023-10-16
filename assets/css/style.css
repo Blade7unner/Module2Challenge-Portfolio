@@ -61,3 +61,16 @@ header img {
 }
 
 /* styles with flexbox for the "My Work" section */
+
+#work {
+    text-align: center;
+
+}
+
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
