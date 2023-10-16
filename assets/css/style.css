@@ -109,5 +109,12 @@ header img {
 
 }
 
+/*custom class styles */
+
+.my-image {
+    border: 2px solid red;
+    width: 200px;
+    height: 200px;
+}
 
 
