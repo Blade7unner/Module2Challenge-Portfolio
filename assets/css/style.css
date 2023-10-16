@@ -1,6 +1,7 @@
+/* styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #270f95;
 }
 
 header {
@@ -58,3 +59,5 @@ header img {
  }
 
 }
+
+/* styles with flexbox for the "My Work" section */
