@@ -112,9 +112,9 @@ header img {
 /*custom class styles */
 
 .my-image {
-    border: 2px solid red;
-    width: 200px;
-    height: 200px;
+    border: 6px solid rgb(29, 11, 148);
+    width: 600px;
+    height: 600px;
 }
 
 
