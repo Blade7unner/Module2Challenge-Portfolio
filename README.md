@@ -1,6 +1,6 @@
 # Module2Challenge-Professional-Portfolio
 
-## This is my Module 1 challenge for week 2.
+## This is my Module 2 challenge for week 2.
 
 Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
 
