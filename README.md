@@ -1,10 +1,6 @@
-# Module2Challenge-Professional-Portfolio
-
-## This is my Module 2 challenge for week 2.
+# Professional-Portfolio
 
 Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
-
-```
 
 ```
 - GIVEN I need to sample a potential employee's previous work
