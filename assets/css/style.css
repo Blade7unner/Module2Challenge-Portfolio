@@ -2,6 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #270f95;
+    color: #333;
 }
 
 header {
@@ -15,15 +16,17 @@ header h1 {
     font-size: 2rem;
 }
 
-header img {
+header img.my-image {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    border: 6px solid rgb(29, 11, 148);
+    width: 150px; /* Adjusted for responsive design */
+    height: 150px; /* Adjusted for responsive design */
     margin: 20px 0;
 }
 
 nav ul {
     list-style: none;
+    padding: 0;
 }
 
 nav ul li {
@@ -37,36 +40,14 @@ nav a {
     font-weight: bold;
 }
 
-section {
+section.section-box {
     padding: 20px;
     background-color: #fff;
     margin: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 768px) {
-    header {
-        padding: 10px;
- }
-
-header h1 {
-    font-size: 1.5rem;
- }
-header img {
-    width: 100px;
-    height: 100px;
-    margin: 10px 0;
- }
-
-}
-
-/* styles with flexbox for "My Work" section */
-
-#work {
-    text-align: center;
-
-}
-
+/* Styles for "My Work" section with flexbox */
 .work-container {
     display: flex;
     flex-wrap: wrap;
@@ -74,17 +55,20 @@ header img {
 }
 
 .work-sample {
-    flex: 1;
+    flex: 0 1 300px; /* Allows for wrapping and flexible sizing */
     margin: 10px;
     text-align: center;
-
 }
 
 .work-sample img {
     width: 100%;
-    max-width: 300px;
+    max-width: 300px; /* Standard size for images */
     border: 1px solid #ccc;
     cursor: pointer;
+}
+
+.work-sample.featured img {
+    max-width: 400px; /* Larger size for the featured work */
 }
 
 .work-sample:hover img {
@@ -92,29 +76,17 @@ header img {
 }
 
 /* Responsive styles for smaller screens */
-
 @media screen and (max-width: 768px) {
-    header {
+    header, header h1, header img.my-image {
         padding: 10px;
-    }
-    header h1 {
         font-size: 1.5rem;
-    }
-
-    header img {
         width: 100px;
         height: 100px;
         margin: 10px 0;
     }
 
+    .work-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
-
-/*custom class styles */
-
-.my-image {
-    border: 6px solid rgb(29, 11, 148);
-    width: 600px;
-    height: 600px;
-}
-
-
