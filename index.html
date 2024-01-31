@@ -5,15 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+
     <title>Felipe Benoit - Portfolio</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 </head>
 <body>
+    
     <div class="container">
         <header class="text-center bg-dark text-white py-4">
             <h1>Felipe Benoit</h1>
-            <img src="/assets/images/my-image.jpg" alt="Felipe Benoit Portrait" class="rounded-circle my-image">
+            <img src="/assets/images/my-image.jpg" alt="Portrait" class="rounded-circle my-image">
             <nav class="navbar navbar-expand-lg navbar-dark justify-content-center">
                 <div class="navbar-nav">
                     <a class="nav-item nav-link" href="#about">About</a>
@@ -24,81 +28,45 @@
         </header>
         <main>
             <section id="about" class="section-box py-4">
-                <h2>About Me</h2>
-                <p>Welcome to my portfolio! I'm Felipe Benoit, aspiring in [Your Field]. This collection reflects my journey and work in [Your Field], showcasing my passion as a [Your Role]. My work, blending creativity with practicality, is both innovative and rooted in key principles.
-
-                    Here, you'll see projects that highlight my skills, style, and challenges I've faced, from [specific project] to [another project]. Each project is a step towards excellence.
-                    
-                    I'm keen to collaborate and grow in [Your Field]. Whether you're a potential employer, colleague, or visitor, I hope you find inspiration here.
-                    
-                    Thanks for stopping by, and I'm excited about the potential of working together!</p>
-                <!-- ... Additional content ... -->
-
-                <button type="button" class="btn btn-primary">Primary Button</button>
-                
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <h2>About Me</h2>
+                    <p>Welcome to my portfolio! I'm Felipe Benoit, aspiring in web and app development. This collection reflects my journey and work in this dynamic field, showcasing my passion as a developer.</p>
+                    <p>Here, you'll see projects that highlight my skills, style, and the challenges I've faced, from innovative web applications to engaging mobile apps. Each project is a step towards excellence.</p>
+                    <p>I'm keen to collaborate and grow in the field of web and app development. Whether you're a potential employer, colleague, or visitor, I hope you find inspiration in my work.</p>
+                    <p>Thanks for stopping by, and I'm excited about the potential of working together on future tech endeavors!</p>
+                </div>
             </section>
-            
 
             <section id="work" class="py-4">
-                <h2>My Work</h2>
-                <div class="row">
-                    <!-- Featured Work Sample -->
-                    <div class="col-md-4 mb-3">
-                        <div class="card">
-                            <img src="work-sample-1.jpg" class="card-img-top" alt="Module 1 Challenge - Featured Project">
-                            <div class="card-body">
-                                <h5 class="card-title">Module 1 Challenge</h5>
-                                <a href="https://github.com/Blade7unner/Module1Challenge.git" class="btn btn-primary" target="_blank">View Project</a>
+                <div class="container">
+                    <h2 class="text-center">My Work</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <img src="work-sample-1.jpg" class="card-img-top" alt="Module 1 Challenge - Featured Project">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Module 1 Challenge</h5>
+                                    <p class="card-text">Brief description of the project...</p>
+                                    <a href="https://github.com/Blade7unner/Module1Challenge.git" class="btn btn-primary mt-auto" target="_blank">View Project</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Other Work Samples -->
-                    <div class="col-md-4 mb-3">
-                        <div class="card">
-                            <img src="work-sample-2.jpg" class="card-img-top" alt="Project 2">
-                            <div class="card-body">
-                                <h5 class="card-title">Project 2</h5>
-                                <a href="https://github.com/Blade7unner/project-2" class="btn btn-primary" target="_blank">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <div class="card">
-                            <img src="work-sample-3.jpg" class="card-img-top" alt="Project 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Project 3</h5>
-                                <a href="https://github.com/Blade7unner/project-3" class="btn btn-primary" target="_blank">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <div class="card">
-                            <img src="work-sample-4.jpg" class="card-img-top" alt="Project 4">
-                            <div class="card-body">
-                                <h5 class="card-title">Project 4</h5>
-                                <a href="your-project-4-link" class="btn btn-primary" target="_blank">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <div class="card">
-                            <img src="work-sample-5.jpg" class="card-img-top" alt="Project 5">
-                            <div class="card-body">
-                                <h5 class="card-title">Project 5</h5>
-                                <a href="your-project-5-link" class="btn btn-primary" target="_blank">View Project</a>
-                            </div>
-                        </div>
+                        <!-- Repeat for other work samples -->
                     </div>
                 </div>
             </section>
 
             <section id="contact" class="section-box py-4">
-                <h2>Contact Me</h2>
-                <p>Email: <a href="mailto:fbenoit2077@gmail.com">fbenoit2077@gmail.com</a></p>
-                <p>Github: <a href="https://github.com/Blade7unner" target="_blank">Github.com/Blade7unner</a></p>
+                <div class="d-flex flex-column align-items-center justify-content-center h-100">
+                    <h2>Contact Me</h2>
+                    <p>Email: <a href="mailto:fbenoit2077@gmail.com">fbenoit2077@gmail.com</a></p>
+                    <p>Github: <a href="https://github.com/Blade7unner" target="_blank">Github.com/Blade7unner</a></p>
+                </div>
             </section>
         </main>
     </div>
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- GSAP Animations -->
     <script>
         gsap.from("header", { duration: 1, y: -100, opacity: 0 });

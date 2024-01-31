@@ -40,7 +40,6 @@ header img.my-image {
     width: 150px;
     height: 150px;
     margin-bottom: 20px;
-    clip-path: square(50% at center);
 }
 
 /* Navigation Styles */
@@ -82,14 +81,14 @@ section.section-box {
     background-color: var(--text-color);
     margin: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    flex-grow: 1;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
 }
 
 /* Work Container Styles */
 .work-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     padding: 10px;
     gap: 10px;
 }
@@ -142,4 +141,3 @@ section.section-box {
 @media screen and (max-width: 480px) {
     /* Adjust styles for smaller mobile devices */
 }
-
