@@ -1,4 +1,4 @@
-# Felipe Benoit's Portfolio
+# Benoit's Portfolio
 
 Welcome to my professional portfolio! This portfolio is a showcase of my coding projects and skills, designed to provide a comprehensive look at my capabilities as a developer. It is created with HTML, CSS, and incorporates responsive design principles to ensure a seamless experience across various devices and screen sizes.
 
