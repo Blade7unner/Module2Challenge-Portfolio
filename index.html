@@ -4,60 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <title>Felipe Benoit - Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 </head>
 <body>
     <div class="container">
-        <header>
+        <header class="text-center bg-dark text-white py-4">
             <h1>Felipe Benoit</h1>
-            <img src="my-image.jpg" alt="Felipe Benoit Portrait" class="my-image">
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+            <img src="/assets/images/my-image.jpg" alt="Felipe Benoit Portrait" class="rounded-circle my-image">
+            <nav class="navbar navbar-expand-lg navbar-dark justify-content-center">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#about">About</a>
+                    <a class="nav-item nav-link" href="#work">Work</a>
+                    <a class="nav-item nav-link" href="#contact">Contact</a>
+                </div>
             </nav>
         </header>
         <main>
-            <section id="about" class="section-box">
+            <section id="about" class="section-box py-4">
                 <h2>About Me</h2>
-                <p>My name is Felipe Benoit and this is my first Portfolio!</p>
-            </section>
+                <p>Welcome to my portfolio! I'm Felipe Benoit, aspiring in [Your Field]. This collection reflects my journey and work in [Your Field], showcasing my passion as a [Your Role]. My work, blending creativity with practicality, is both innovative and rooted in key principles.
 
-            <section id="work" class="section-box">
+                    Here, you'll see projects that highlight my skills, style, and challenges I've faced, from [specific project] to [another project]. Each project is a step towards excellence.
+                    
+                    I'm keen to collaborate and grow in [Your Field]. Whether you're a potential employer, colleague, or visitor, I hope you find inspiration here.
+                    
+                    Thanks for stopping by, and I'm excited about the potential of working together!</p>
+                <!-- ... Additional content ... -->
+
+                <button type="button" class="btn btn-primary">Primary Button</button>
+                
+            </section>
+            
+
+            <section id="work" class="py-4">
                 <h2>My Work</h2>
-                <div class="work-container">
+                <div class="row">
                     <!-- Featured Work Sample -->
-                    <div class="work-sample featured">
-                        <a href="https://github.com/Blade7unner/Module1Challenge.git" target="_blank">
-                            <img src="work-sample-1.jpg" alt="Module 1 Challenge - Featured Project">
-                            <p>Module 1 Challenge</p>
-                        </a>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img src="work-sample-1.jpg" class="card-img-top" alt="Module 1 Challenge - Featured Project">
+                            <div class="card-body">
+                                <h5 class="card-title">Module 1 Challenge</h5>
+                                <a href="https://github.com/Blade7unner/Module1Challenge.git" class="btn btn-primary" target="_blank">View Project</a>
+                            </div>
+                        </div>
                     </div>
                     <!-- Other Work Samples -->
-                    <div class="work-sample">
-                        <a href="https://github.com/Blade7unner/project-2" target="_blank">
-                            <img src="work-sample-2.jpg" alt="Project 2">
-                            <p>Project 2</p>
-                        </a>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img src="work-sample-2.jpg" class="card-img-top" alt="Project 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Project 2</h5>
+                                <a href="https://github.com/Blade7unner/project-2" class="btn btn-primary" target="_blank">View Project</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="work-sample">
-                        <a href="https://github.com/Blade7unner/project-3" target="_blank">
-                            <img src="work-sample-3.jpg" alt="Project 3">
-                            <p>Project 3</p>
-                        </a>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img src="work-sample-3.jpg" class="card-img-top" alt="Project 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Project 3</h5>
+                                <a href="https://github.com/Blade7unner/project-3" class="btn btn-primary" target="_blank">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img src="work-sample-4.jpg" class="card-img-top" alt="Project 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Project 4</h5>
+                                <a href="your-project-4-link" class="btn btn-primary" target="_blank">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img src="work-sample-5.jpg" class="card-img-top" alt="Project 5">
+                            <div class="card-body">
+                                <h5 class="card-title">Project 5</h5>
+                                <a href="your-project-5-link" class="btn btn-primary" target="_blank">View Project</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section id="contact" class="section-box">
+            <section id="contact" class="section-box py-4">
                 <h2>Contact Me</h2>
                 <p>Email: <a href="mailto:fbenoit2077@gmail.com">fbenoit2077@gmail.com</a></p>
                 <p>Github: <a href="https://github.com/Blade7unner" target="_blank">Github.com/Blade7unner</a></p>
             </section>
         </main>
     </div>
+    <!-- GSAP Animations -->
+    <script>
+        gsap.from("header", { duration: 1, y: -100, opacity: 0 });
+        gsap.from(".section-box", { duration: 1, y: 100, opacity: 0, stagger: 0.3 });
+        gsap.from(".card", { duration: 1, scale: 0.5, opacity: 0, stagger: 0.2, delay: 1 });
+    </script>
 </body>
 </html>
-

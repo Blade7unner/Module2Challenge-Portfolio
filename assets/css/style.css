@@ -1,88 +1,132 @@
-/* CSS styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #270f95;
-    color: #333;
+/* CSS Root with Variables */
+:root {
+    --primary-color: #270f95;
+    --secondary-color: #211e1e;
+    --text-color: #fff;
+    --border-radius: 50%;
+    --transition-speed: 0.3s;
 }
 
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
     padding: 20px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 header h1 {
     font-size: 2rem;
+    margin: 10px 0;
 }
 
 header img.my-image {
-    border-radius: 50%;
-    border: 6px solid rgb(29, 11, 148);
-    width: 150px; /* Adjusted for responsive design */
-    height: 150px; /* Adjusted for responsive design */
-    margin: 20px 0;
+    border-radius: var(--border-radius);
+    border: 6px solid rgb(9, 3, 46);
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    clip-path: square(50% at center);
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    margin: 10px;
 }
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: var(--text-color);
     font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color var(--transition-speed), color var(--transition-speed);
 }
 
+nav a:hover, nav a:focus {
+    background-color: var(--text-color);
+    color: var(--secondary-color);
+}
+
+/* Section Styles */
 section.section-box {
     padding: 20px;
-    background-color: #fff;
+    background-color: var(--text-color);
     margin: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    flex-grow: 1;
 }
 
-/* Styles for "My Work" section with flexbox */
+/* Work Container Styles */
 .work-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 10px;
+    gap: 10px;
 }
 
 .work-sample {
-    flex: 0 1 300px; /* Allows for wrapping and flexible sizing */
+    flex: 1 1 300px;
     margin: 10px;
     text-align: center;
 }
 
 .work-sample img {
     width: 100%;
-    max-width: 300px; /* Standard size for images */
+    max-width: 300px;
     border: 1px solid #ccc;
     cursor: pointer;
+    transition: transform var(--transition-speed);
 }
 
 .work-sample.featured img {
-    max-width: 400px; /* Larger size for the featured work */
+    max-width: 400px;
 }
 
 .work-sample:hover img {
     transform: scale(1.1);
 }
 
-/* Responsive styles for smaller screens */
+/* Responsive Design Styles */
 @media screen and (max-width: 768px) {
     header, header h1, header img.my-image {
         padding: 10px;
         font-size: 1.5rem;
         width: 100px;
         height: 100px;
-        margin: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
     }
 
     .work-container {
@@ -90,3 +134,12 @@ section.section-box {
         align-items: center;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    /* Adjust styles for tablets */
+}
+
+@media screen and (max-width: 480px) {
+    /* Adjust styles for smaller mobile devices */
+}
+
