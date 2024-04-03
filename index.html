@@ -3,21 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe Benoit - Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Specify the favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .larger-image {
+            max-width: 300px; /* Adjust the size as needed */
+        }
 
-    <title>Felipe Benoit - Portfolio</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+        .work-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .about-content {
+            text-align: justify;
+        }
+    </style>
 </head>
 <body>
-    
     <div class="container">
         <header class="text-center bg-dark text-white py-4">
             <h1>Felipe Benoit</h1>
-            <img src="/assets/images/my-image.jpg" alt="Portrait" class="rounded-circle my-image">
+            <!-- Use the same image for the favicon and header -->
+            <img src="./assets/images/my-image.gif" alt="Portrait" class="rounded-circle my-image larger-image">
             <nav class="navbar navbar-expand-lg navbar-dark justify-content-center">
                 <div class="navbar-nav">
                     <a class="nav-item nav-link" href="#about">About</a>
@@ -28,12 +42,20 @@
         </header>
         <main>
             <section id="about" class="section-box py-4">
-                <div class="d-flex flex-column align-items-center justify-content-center">
-                    <h2>About Me</h2>
-                    <p>Welcome to my portfolio! I'm Felipe Benoit, aspiring in web and app development. This collection reflects my journey and work in this dynamic field, showcasing my passion as a developer.</p>
-                    <p>Here, you'll see projects that highlight my skills, style, and the challenges I've faced, from innovative web applications to engaging mobile apps. Each project is a step towards excellence.</p>
-                    <p>I'm keen to collaborate and grow in the field of web and app development. Whether you're a potential employer, colleague, or visitor, I hope you find inspiration in my work.</p>
-                    <p>Thanks for stopping by, and I'm excited about the potential of working together on future tech endeavors!</p>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="text-center">
+                                <h2>About Me</h2>
+                            </div>
+                            <div class="about-content">
+                                <p>Welcome to my portfolio! I'm Felipe Benoit, aspiring in web and app development. This collection reflects my journey and work in this dynamic field, showcasing my passion as a developer.</p>
+                                <p>Here, you'll see projects that highlight my skills, style, and the challenges I've faced, from innovative web applications to engaging mobile apps. Each project is a step towards excellence.</p>
+                                <p>I'm keen to collaborate and grow in the field of web and app development. Whether you're a potential employer, colleague, or visitor, I hope you find inspiration in my work.</p>
+                                <p>Thanks for stopping by, and I'm excited about the potential of working together on future tech endeavors!</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -43,15 +65,36 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-4 col-md-6 mb-4">
                             <div class="card h-100">
-                                <img src="work-sample-1.jpg" class="card-img-top" alt="Module 1 Challenge - Featured Project">
+                                <img src="./assets/images/work-sample-1.jpg" class="card-img-top work-image" alt="Module 1 Challenge - Featured Project">
                                 <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">Module 1 Challenge</h5>
-                                    <p class="card-text">Brief description of the project...</p>
-                                    <a href="https://github.com/Blade7unner/Module1Challenge.git" class="btn btn-primary mt-auto" target="_blank">View Project</a>
+                                    <h5 class="card-title">Crypto Portfolio AI</h5>
+                                    <p class="card-text">Gathers real-time cryptocurrency data from multiple sources. Using AI algorithms, it analyzes this data to provide users with actionable insights for optimizing their investment strategies.</p>
+                                    <a href="https://github.com/Blade7unner/Crypto-Portfolio-AI" class="btn btn-primary mt-auto" target="_blank">View Project</a>
                                 </div>
                             </div>
                         </div>
-                        <!-- Repeat for other work samples -->
+
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <img src="./assets/images/work-sample-2.jpg" class="card-img-top work-image" alt="Work Sample 2">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Weather Dashboard</h5>
+                                    <p class="card-text">Utilizing Server-Side APIs, delivers instant weather updates for any location. Simplifying weather checking, it provides accurate forecasts at your fingertips.</p>
+                                    <a href="https://github.com/Blade7unner/Weather-Dashboard" class="btn btn-primary mt-auto" target="_blank">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <img src="./assets/images/work-sample-3.jpg" class="card-img-top work-image" alt="Work Sample 3">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">README Generator</h5>
+                                    <p class="card-text">The Node.js Professional README Generator utilizes Node.js and npm along with libraries like Inquirer.js and Markdown-it to simplify README file creation.</p>
+                                    <a href="https://github.com/Blade7unner/Readmegenerator" class="btn btn-primary mt-auto" target="_blank">View Project</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -68,6 +111,7 @@
     <!-- Bootstrap 5 JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- GSAP Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script>
         gsap.from("header", { duration: 1, y: -100, opacity: 0 });
         gsap.from(".section-box", { duration: 1, y: 100, opacity: 0, stagger: 0.3 });

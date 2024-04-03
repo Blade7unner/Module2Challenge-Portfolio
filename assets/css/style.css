@@ -1,9 +1,9 @@
-/* CSS Root with Variables */
+
 :root {
-    --primary-color: #270f95;
+    --primary-color: #401ce1;
     --secondary-color: #211e1e;
     --text-color: #fff;
-    --border-radius: 50%;
+    --border-radius: 10px; 
     --transition-speed: 0.3s;
 }
 
@@ -27,6 +27,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-bottom: 5px solid #000000; 
 }
 
 header h1 {
@@ -47,6 +48,7 @@ nav {
     display: flex;
     justify-content: center;
     background-color: #000000;
+    border-bottom: 2px solid var(--primary-color); 
 }
 
 nav ul {
@@ -71,9 +73,10 @@ nav a {
 }
 
 nav a:hover, nav a:focus {
-    background-color: var(--text-color);
-    color: var(--secondary-color);
+    background-color: var(--primary-color); 
+    color: var(--text-color); 
 }
+
 
 /* Section Styles */
 section.section-box {
@@ -85,12 +88,22 @@ section.section-box {
     align-items: center; 
     justify-content: center; 
     text-align: center; 
+    border: 2px solid #000000; 
+    border-radius: var(--border-radius); 
 }
 
 /* Work Container Styles */
 .work-container {
-    padding: 10px;
-    gap: 10px;
+    padding: 20px; /* Update padding */
+    background-color: var(--text-color);
+    margin: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    border: 2px solid #000000; 
+    border-radius: var(--border-radius); 
 }
 
 .work-sample {
@@ -102,10 +115,20 @@ section.section-box {
 .work-sample img {
     width: 100%;
     max-width: 300px;
-    border: 1px solid #ccc;
+    border: 1px solid #cc000000;
     cursor: pointer;
     transition: transform var(--transition-speed);
+    border-radius: var(--border-radius); 
 }
+
+.work-sample.featured img {
+    max-width: 400px;
+}
+
+.work-sample:hover img {
+    transform: scale(1.1);
+}
+
 
 .work-sample.featured img {
     max-width: 400px;
@@ -135,9 +158,9 @@ section.section-box {
 }
 
 @media screen and (max-width: 1024px) {
-    /* Adjust styles for tablets */
+    
 }
 
 @media screen and (max-width: 480px) {
-    /* Adjust styles for smaller mobile devices */
+    
 }
