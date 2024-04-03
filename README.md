@@ -6,7 +6,7 @@ Welcome to my professional portfolio! This portfolio is a showcase of my coding 
 
 ## Deployed Application
 
-You can access the Weather Dashboard application [here](https://blade7unner.github.io/Weather-Dashboard/).
+You can access the Weather Dashboard application [here](https://blade7unner.github.io/Portfolioverse/).
 
 
 ## Table of Contents
