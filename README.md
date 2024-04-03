@@ -1,4 +1,4 @@
-# Benoit's Portfolio
+# My Portfolio
 
 Welcome to my professional portfolio! This portfolio is a showcase of my coding projects and skills, designed to provide a comprehensive look at my capabilities as a developer. It is created with HTML, CSS, and incorporates responsive design principles to ensure a seamless experience across various devices and screen sizes.
 
@@ -7,7 +7,6 @@ Welcome to my professional portfolio! This portfolio is a showcase of my coding 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
-- [License](#license)
 
 ## Installation
 
@@ -31,8 +30,3 @@ To navigate through the sections, simply click on the navigation links at the to
 - Responsive layout that adapts to different screen sizes.
 - Smooth scrolling to different sections of the webpage.
 - Titled images of applications that link to the deployed projects.
-
-
-## License
-
-Distribute under the [] License. See `LICENSE` for more information.
