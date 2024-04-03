@@ -2,6 +2,13 @@
 
 Welcome to my professional portfolio! This portfolio is a showcase of my coding projects and skills, designed to provide a comprehensive look at my capabilities as a developer. It is created with HTML, CSS, and incorporates responsive design principles to ensure a seamless experience across various devices and screen sizes.
 
+<img width="1916" alt="Screenshot 2024-04-03 at 2 37 30 PM" src="https://github.com/Blade7unner/Portfolioverse/assets/145617666/8205ced6-94d8-4924-8984-5b37af2d1c68">
+
+## Deployed Application
+
+You can access the Weather Dashboard application [here](https://blade7unner.github.io/Weather-Dashboard/).
+
+
 ## Table of Contents
 
 - [Installation](#installation)
@@ -12,7 +19,13 @@ Welcome to my professional portfolio! This portfolio is a showcase of my coding 
 
 To view my portfolio on your local machine:
 
-1. Clone the repository to your local machine using `git clone https://github.com/Blade7unner/felipe-benoit-portfolio.git`.
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/Blade7unner/Portfolioverse.git
+2. **Navigate to the project directory:**
+   ```bash
+   cd
 2. Open the `index.html` file in your web browser.
 
 ## Usage
